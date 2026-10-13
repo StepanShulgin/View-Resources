@@ -1,3 +1,58 @@
 <resources>
     <string name="app_name">View &amp; Resources</string>
+    <string name="back">Back</string>
+    <string name="close">Close</string>
+    <string name="attach">Attach file</string>
+    <string name="more">More options</string>
+    <string name="menu">Menu</string>
+    <string name="toggle_password">Show or hide password</string>
+    <string-array name="phone_types">
+        <item>Mobile</item>
+        <item>Home</item>
+        <item>Work</item>
+    </string-array>
+    <string name="contacts">Contacts</string>
+    <string name="cart">Cart</string>
+    <string name="profile">Profile</string>
+    <string name="save">Save</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="select">Select</string>
+    <string name="mobile">Mobile</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="date">Date</string>
+    <string name="notes">Notes</string>
+    <string name="contact_name">Ivan Petrov</string>
+    <string name="phone_number">+1(234)567-8900</string>
+    <string name="address_value">123, Lenin street, Apt.6</string>
+    <string name="city_value">Tokyo</string>
+    <string name="country_value">Australia</string>
+    <string name="date_value">24.10.2025</string>
+    <string name="notes_value">Loves burgers and french fries</string>
+    <string name="cart_count">4 items in your cart</string>
+    <string name="list_item">List item %1$d</string>
+    <string name="cart_item_title">List item 1</string>
+    <string name="category">Category</string>
+    <string name="supporting_text">Supporting line text lorem ipsum dolor sit amet, consectetur.</string>
+    <string name="subtotal">Subtotal:</string>
+    <string name="shipping">Shipping:</string>
+    <string name="tax">Tax:</string>
+    <string name="order_total">Order Total:</string>
+    <string name="place_order">Place order</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="reset_password">Reset my password</string>
+    <string name="cancel">Cancel</string>
+    <string name="open_contacts">Open contacts</string>
+    <string name="open_cart">Open cart</string>
+    <string name="show_sign_in_dialog">Show sign in dialog</string>
+    <string name="sample_login">ivanpetrov</string>
+    <string name="sample_password">password123</string>
+    <string name="item_price">$35</string>
+    <string name="total_price">$175.50</string>
+    <string name="subtotal_price">$140</string>
+    <string name="shipping_price">$25</string>
+    <string name="tax_price">$10.50</string>
 </resources>

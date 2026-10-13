@@ -48,3 +48,31 @@
 2. [Material Components](https://m3.material.io/components) - библиотека компонентов Material Design
 3. [Material Colors](https://m2.material.io/design/color/the-color-system.html#color-usage-and-palettes) - цветовая палитра Material Design и их использование
 4. [Material theme builder](https://m3.material.io/blog/material-theme-builder) - генератор тем Material Design
+
+## Реализация и проверка
+
+- Contacts, Cart и Login сверены со светлыми и тёмными вариантами предоставленного
+  [макета Figma](https://www.figma.com/design/Hnr56IYCNZ7kREAB63VuhQ/Views-and-resources--Community-).
+- Цвета находятся в `values/colors.xml` и `values-night/colors.xml`; XML использует
+  атрибуты общей темы. Для горизонтальной корзины предусмотрена двухколоночная
+  верстка, формы прокручиваются при нехватке места.
+- Login использует `MaterialAlertDialog` внутри `DialogFragment`, поэтому введённые
+  значения сохраняются при пересоздании Activity. Это демонстрационная форма:
+  авторизация, сброс пароля, сохранение контакта и оформление заказа не входят в ТЗ.
+  Демонстрационные пароли не передаются менеджеру автозаполнения.
+- Иконки — оригинальные Android VectorDrawable из
+  [Google Material Design Icons](https://github.com/google/material-design-icons/tree/49d4db35df873165d6bd6ba09b063c7dafbac2f4/android).
+  Использованы Material Icons, для `light_mode` — Outlined. Лицензия Apache 2.0
+  сохранена в `third-party/material-icons-LICENSE.txt`.
+
+Проверка сборки и ресурсов:
+
+```sh
+./gradlew :app:assembleDebug :app:lintDebug :app:assembleDebugAndroidTest
+```
+
+Семь инструментальных тестов в `LayoutTest` проверяют три экрана в обеих темах
+и ориентациях, выравнивание цен, выбор типа телефона, сохранение ввода после
+пересоздания Activity, отсутствие дублирующихся диалогов и доступность кнопок
+Login с открытой клавиатурой в landscape. Видимость IME проверяется явно.
+Скриншоты сохраняются в каталоге `files/screenshots` внешнего хранилища приложения.

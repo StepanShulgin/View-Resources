@@ -1,0 +1,8 @@
+<resources>
+    <attr name="appSurface" format="color" />
+    <attr name="appOnSurface" format="color" />
+    <attr name="appOnSurfaceVariant" format="color" />
+    <attr name="appSurfaceContainer" format="color" />
+    <attr name="appPrice" format="color" />
+    <attr name="appDialogSurface" format="color" />
+</resources>

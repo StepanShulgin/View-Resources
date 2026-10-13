@@ -1,9 +1,62 @@
 <resources>
-    <!-- Base application theme. -->
     <style name="Base.Theme.ViewResources" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/on_surface_variant</item>
+        <item name="colorControlNormal">@color/on_surface_variant</item>
+        <item name="colorSurfaceContainer">@color/dialog_surface</item>
+        <item name="colorSurfaceVariant">@color/surface_container</item>
+        <item name="colorOutline">@color/outline</item>
+        <item name="colorOutlineVariant">@color/outline_variant</item>
+        <item name="appSurface">@color/surface</item>
+        <item name="appOnSurface">@color/on_surface</item>
+        <item name="appOnSurfaceVariant">@color/on_surface_variant</item>
+        <item name="appSurfaceContainer">@color/surface_container</item>
+        <item name="appPrice">@color/price</item>
+        <item name="appDialogSurface">@color/dialog_surface</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.ViewResources.Dialog</item>
+        <item name="android:windowLightStatusBar">@bool/light_system_bars</item>
+        <item name="android:windowBackground">?attr/appSurface</item>
     </style>
-
     <style name="Theme.ViewResources" parent="Base.Theme.ViewResources" />
+    <style name="Widget.ViewResources.ContactField" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="boxBackgroundColor">?attr/appSurfaceContainer</item>
+        <item name="hintTextColor">?attr/appOnSurfaceVariant</item>
+        <item name="endIconTint">?attr/appOnSurfaceVariant</item>
+    </style>
+    <style name="Widget.ViewResources.Input" parent="Widget.Material3.TextInputEditText.FilledBox">
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.03125</item>
+        <item name="android:textColor">?attr/appOnSurface</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+    <style name="TextAppearance.ViewResources.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">?attr/appOnSurface</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="TextAppearance.ViewResources.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">?attr/appOnSurfaceVariant</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="TextAppearance.ViewResources.Label" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textColor">?attr/appOnSurface</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="ThemeOverlay.ViewResources.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="alertDialogStyle">@style/MaterialAlertDialog.ViewResources</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="MaterialAlertDialog.ViewResources" parent="MaterialAlertDialog.Material3">
+        <item name="backgroundTint">?attr/appDialogSurface</item>
+    </style>
+    <style name="ShapeAppearance.ViewResources.Image" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
 </resources>

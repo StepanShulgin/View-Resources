@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="login_window_width">380dp</dimen>
+    <dimen name="login_screen_margin">8dp</dimen>
+    <dimen name="login_vertical_offset">44dp</dimen>
+</resources>
